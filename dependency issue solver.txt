@@ -1,0 +1,17 @@
+*** https://www.npmjs.com/package/npm-check-updates
+
+// Install npm chech updates package
+npm i -g npm-check-updates
+
+// see the possibe updates in package.json
+ncu
+
+// Procede with package updation 
+ncu -u
+
+// Install those packages
+npm i
+
+
+*** If you want to just update those package with vulnerabilities and change package-lock.json
+npm audit fix
