@@ -14,35 +14,35 @@ The diagram below demonstrates the flow of the web application. The incoming req
 
 The project uses docker and kubernetes, so it should be installed and configured onto your system. Then to work with kubernetes, [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) and [minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) should be configured.
 
-### Front end (client)
+#### Front end (client)
 
 - To edit the ReactJS code, open `/client`
 - To change deployment configuration, edit `/k8s/client-deployment.yml`
 - To change the service configuration (ClusterIP), edit `/k8s/client-cluster-ip-service.yml`
 
-### Server
+#### Server
 
 - To edit the NodeJS code, open `/server`
 - To change deployment configuration, edit `/k8s/server-deployment.yml`
 - To change the service configuration (ClusterIP), edit `/k8s/server-cluster-ip-service.yml`
 
-### Worker
+#### Worker
 
 - To edit the NodeJS code, open `/worker`
 - To change deployment configuration, edit `/k8s/worker-deployment.yml`
 - To change the service configuration (ClusterIP), edit `/k8s/worker-cluster-ip-service.yml`
 
-### Redis database
+#### Redis database
 
 - To change redis deployment configuration, edit `k8s/redis-deployment.yml`
 - To change redis service configuration, edit `k8s/redis-cluster-ip-service.yml`
 
-### Postgres (Persistent Volume Claim)
+#### Postgres (Persistent Volume Claim)
 
 - To change postgres deployment configuration, edit `k8s/postgres-deployment.yml`
 - To change postgres service configuration, edit `k8s/postgres-cluster-ip-service.yml`
 
-### Load Balancer (ingress-nginx)
+#### Load Balancer (ingress-nginx)
 
 - To change the load balancer configuration, edit `k8s/ingress-service.yml`
 
